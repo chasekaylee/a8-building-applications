@@ -8,6 +8,6 @@ data <- iris
 
 shinyServer(function(input, output) {
   output$scatterPlot <- renderPlotly({ 
-    build_scatter(data, input$specie, input$colors, input$sampleSize)
+    build_scatter(data, input$specie, input$sampleSize)
   })
 })
